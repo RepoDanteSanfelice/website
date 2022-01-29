@@ -1,0 +1,105 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif; 
+    overflow-x: hidden;
+}
+/* ================== Menú ==================== */
+#menu li > a{
+    font-size: 18px;
+    font-weight: bold;
+    color: #3f3f3f;
+}
+#menu form > button{
+    font-size: 18px;
+    font-weight: bold; 
+}
+
+/* ================ Tamaño de la imagen ================= */
+.carrousel-inner{
+    max-height: 39rem;
+}
+
+/* Equipo de desarrolladores */
+#numeros-local div{
+    padding: 0 20px 0 0;
+    height: 48px;
+}
+#numeros-local div:not(:last-child){
+    border-right: 2px solid #3f3f3f;
+}
+#numeros-local div:not(:first-child){
+    padding-left: 20px ;
+}
+#numeros-local p{
+    margin: 0;
+}
+
+/* ================ Footer ================================= */
+footer{
+    background: #1b2a4e;
+    min-height: 100px;
+}
+footer p{
+    color: #f3f3f3; 
+    text-align:center;
+}
+#iconos i{
+    font-size: 26px ;
+    padding: 0 8px;
+    color: #f3f3f3;
+}
+
+/* ================ Media queries pantalla ================= */
+@media(max-width:768px){
+    #intro, #equipo{
+        width: 90% !important;
+        margin:auto;
+    }
+    #equipo p {
+        display: none;
+    }
+    .servicio-fila{
+        width: 100% !important;
+        text-align: center;
+    } 
+    #bg-contactos{
+        top: -110px;
+    }
+    .wrapper-local {
+        width:90%;
+        margin:auto;
+        padding-top:50px;    
+    }
+}
+
+/* Pantallas pequeñas */
+@media(max-width: 576px){
+    .icono-wrap{
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+    #servicios-fila-2 {
+        width:100% !important;
+    }
+    #servicios-fila-1 {
+        width:100% !important;
+    }
+}
+/* Pantallas grandes */
+@media(max-width:1200px){
+    #intro, #equipo {
+        width:90% !important;
+        margin:auto;
+    }
+    #local{
+        flex-wrap: wrap;
+        padding-top: 30px;
+    }
+    .wrapper-local{
+        width: 90%;
+        margin:auto;
+        padding-top: 50px;
+    }
+}
